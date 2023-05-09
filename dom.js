@@ -33,4 +33,10 @@ let ptags = document.getElementsByTagName('p');
 let paraClass = document.getElementsByClassName('para');
 
 ptags[1].innerText = "Hello guys";
+
+function addrow(){
+    let TableElement = document.getElementById('table');
+    let row = TableElement.insertRow();
+    let td1 = 
+}
     
