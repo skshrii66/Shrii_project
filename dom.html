@@ -28,8 +28,42 @@
         <td> 36</td>
     </tr>
 </table> <br/>
-<button> Add row</button>
-</body>
+<button onclick = "Addrow()"> Add row </button> <br/>
 
+<!--Select Country-->
+<h4>ADD TYPED COUNTRY TO SELECT BOX...</h4>
+<div>
+    <label>Select Country</label>
+    <select id = "country">
+        <option>India</option>
+        <option>USA</option>
+    </select> <br/>
+
+    <label>Type to Add Country</label>
+    <input type = "text" id = "addcountry"/> <br/> <br/>
+
+    <button onclick="addcountry()"> Add Country</button>
+    <button onclick="removecountry()">  Delete Country</button>
+</div>  
+
+<!--EVENTS-->
+<h4>Events</h4>
+Events: <input type = "text" onblur="evenTiggered(this)"  onfocus="evenTiggered(this)"
+onselect="evenTiggered(this)" onkeydown="evenTiggered(this)" onkeyup="evenTiggered(this)"/> <br/> <br/>  
+
+<button type ="button" onclick = "eventButton()">CLICK ME </button>
+
+<h3>Retrive first and last element for a parent</h3>
+<div id="appendData">
+    <ul>
+        <li>Home</li>
+    <li>Servies</li>
+    <li>Product</li>
+    </ul>
+    
+</div>
+
+
+</body>
 <script src="./dom.js"></script>
 </html>
